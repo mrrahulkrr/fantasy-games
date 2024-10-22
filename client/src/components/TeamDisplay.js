@@ -19,10 +19,10 @@ function TeamDisplay({ team }) {
 
   const getPositionColor = (position) => {
     const colors = {
-      'Goalkeeper': 'bg-yellow-400',
-      'Defender': 'bg-blue-400',
-      'Midfielder': 'bg-green-400',
-      'Forward': 'bg-red-400'
+      'Batsman': 'bg-yellow-400',
+      'Bowler': 'bg-blue-400',
+      'All-Rounder': 'bg-green-400',
+      'Wicket-Keeper': 'bg-red-400'
     };
     return colors[position] || 'bg-gray-400';
   };

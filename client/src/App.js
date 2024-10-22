@@ -15,7 +15,7 @@ function App() {
     const fetchPlayers = async () => {
       try {
         setIsLoading(true);
-        const res = await axios.get('http://localhost:5000/players');
+        const res = await axios.get(`https://fantasy-games.onrender.com/players`);
         setPlayers(res.data);
       } catch (err) {
         setError('Failed to load players. Please try again later.');
@@ -29,7 +29,7 @@ function App() {
 
   const createTeam = async (teamData) => {
     try {
-      const res = await axios.post('http://localhost:5000/teams', teamData);
+      const res = await axios.post('https://fantasy-games.onrender.com/teams', teamData);
       setTeam(res.data);
     } catch (error) {
       console.error('Error creating team:', error);

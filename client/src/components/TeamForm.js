@@ -120,12 +120,12 @@ function TeamForm({ players, createTeam }) {
         
         <div className="mb-4 grid grid-cols-2 gap-4">
           <div className="text-sm">
-            <p>Goalkeepers: {positionCounts['Goalkeeper'] || 0}/1</p>
-            <p>Defenders: {positionCounts['Defender'] || 0}/4</p>
+            <p>Batsman: {positionCounts['Batsman'] || 0}/1</p>
+            <p>Bowlers: {positionCounts['Bowler'] || 0}/4</p>
           </div>
           <div className="text-sm">
-            <p>Midfielders: {positionCounts['Midfielder'] || 0}/4</p>
-            <p>Forwards: {positionCounts['Forward'] || 0}/2</p>
+            <p>All-Rounders: {positionCounts['All-Rounder'] || 0}/4</p>
+            {/* <p>Wicket-keepers: {positionCounts['Forward'] || 0}/2</p> */}
           </div>
         </div>
 
